@@ -1,0 +1,63 @@
+abstract class Shape
+{
+ private name ,area,perimeter;
+abstract int calculateArea(int area);
+abstract void calculatePerimeter();
+abstract void draw();
+}
+class Rectangle extends Shape
+{
+@Override
+abstract void calculateArea(){
+System.out.println("Rectangel shape in calculateArea");
+}
+@Override
+abstract void calculatePerimeter()
+{
+System.out.println("Rectangel shape incalculatePerimeter ");
+}
+@Override
+abstract void draw()
+{
+System.out.println("Rectangel shape draw");
+}
+
+} 
+
+class Square extends Shape
+{
+@Override
+abstract void calculateArea(){
+System.out.println("Square shape in calculateArea");
+}
+@Override
+abstract void calculatePerimeter()
+{
+System.out.println("Square shape incalculatePerimeter ");
+}
+@Override
+abstract void draw()
+{
+System.out.println("Square shape draw");
+}
+
+}
+class Circle extends Shape
+{
+@Override
+abstract void calculateArea(){
+System.out.println("Circle shape in calculateArea");
+}
+@Override
+abstract void calculatePerimeter()
+{
+System.out.println("Circle shape incalculatePerimeter ");
+}
+@Override
+abstract void draw()
+{
+System.out.println("Circle shape draw");
+}
+
+
+}
